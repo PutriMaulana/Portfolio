@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Calibre", sans-serif;;
+}
+header{
+    padding: 2% 8%;
+}
+#home{
+    padding: 5% 10%;
+    height: 100vh;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-brand{
+    font-family: poppins;
+    font-size: 30px;
+    color: #de0f66;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: #de0f66;
+}
+.nav-link{
+    text-transform: uppercase;
+    color: #000000;
+}
+.nav-link:hover{
+    color: #de0f66;
+}
+.burger{
+    font-size: 30px;
+    color: #de0f66;
+}
+
+/* HOME */
+.home h5{
+    opacity: 0.8;
+    padding: 0 30% 0 0;
+    margin: 0 0 15px;
+}
+.home span a{
+    color: #de0f66;
+}
+.home span a:hover{
+    color: #de0f66;
+    text-decoration: none;
+}
+.btn{
+    border: solid 1px #de0f66;
+    color: #de0f66;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: #de0f66;
+    color: #fff;
+}
+
+/* about */
+.about{
+    padding: 5% 10%;
+}
+.about h2{
+    color: #de0f66;
+}
+.about .btn{
+    margin: 20px 0 0 0;
+}
+.about img{
+    height:300px;
+    box-shadow: -15px -10px #de0f66;
+    margin: 0 0 0 100px;
+    opacity: 1;
+}
+.about img:hover{
+    box-shadow: -10px -5px #f6acc8;
+}
+
+/* projects */
+.project{
+    padding: 5% 10%;
+    margin: 50px 0 0 0;
+}
+.project h2{
+    color: #de0f66;
+    margin: 0 0 40px;
+}
+.project img{
+    width: 317px;
+    height: 200px;
+}
+.fas{
+    font-size: 35px;
+}
+a .fab{
+    text-decoration: none;
+    color: #de0f66;
+}
+.fab{
+    font-size: 35px;
+    
+}
+.card{
+    border-color: #de0f66;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.card:hover{
+    opacity: 1;
+}
+.ig{
+    text-align: center;
+    color: #000000;
+}
+.with{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+}
+.instagram{
+    text-align: center;
+    margin-top: 100px;
+}
+.title-ig a{
+    color: #de0f66;
+    text-decoration: none;
+}
+.instagram img{
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+.instagram img:hover{
+    opacity: 0.8;
+}
+
+/* Contact */
+.contact{
+    padding: 5% 10%;
+    color: #de0f66;
+}
+.main-contact{
+    padding: 7% 30%;
+    text-align: center;
+    color: #000000;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 1% ;
+    background: #ffa5b0;
+    color: #fff;
+}
+footer span{
+    color: red;
+}
+footer .fab{
+    color: #900C3F;
+    transition: 0.5s ease;
+}
+footer .fab:hover{
+    opacity: 0.5;
+}
+
+
+/* To Top Button */
+
+.to-top {
+    background: #de0f66;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: #eeeeee;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top:hover{
+    background: #eeeeee;
+    color: #de0f66;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .home h5{
+        padding: 8% 0;
+    }
+    .home h5{
+        font-size: 15px;
+    }
+    .home h1{
+        font-size: 18px;
+    }
+    .to-top{
+        bottom: 10px;
+        right: 10px;
+    }
+    footer{
+        font-size: 10px;
+        padding: 30px;
+    }
+    footer .fab{
+        font-size: 25px;
+    }
+    .row .first{
+        order: 2;
+    }
+    .row .second{
+        order: 1;
+    }
+    .about img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .project{
+        margin: 0;
+        padding: 0;
+    }
+    .project .card{
+        padding: 0;
+        display: block;
+        margin: 20px auto;
+       
+    }
+    .instagram img{
+        height: 300px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .contact{
+        padding: 8% 0 0 0;
+    }
+    .main-contact{
+        padding: 3% 1%;
+    }
+  }
