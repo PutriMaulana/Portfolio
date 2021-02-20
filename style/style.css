@@ -8,7 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: "Calibre", sans-serif;;
+    font-family: "Calibre", sans-serif;
+}
+#content{
+    width: 80%;
+    margin: 0 auto;
 }
 header{
     padding: 2% 8%;
@@ -87,8 +91,7 @@ header{
 
 /* projects */
 .project{
-    padding: 5% 10%;
-    margin: 50px 0 0 0;
+    padding: 20px;
 }
 .project h2{
     color: #de0f66;
@@ -208,22 +211,29 @@ footer .fab:hover{
   }
 
 
-@media only screen and (max-width: 600px) {
-    .home h5{
-        padding: 8% 0;
+@media only screen and (max-width: 800px) {
+    #content{
+        width: 100%;
+    }
+    .home{
+        text-align: center;
     }
     .home h5{
-        font-size: 15px;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .home a{
+        margin: 20px 0;
     }
     .home h1{
-        font-size: 18px;
+        font-size: 28px;
     }
     .to-top{
         bottom: 10px;
         right: 10px;
     }
     footer{
-        font-size: 10px;
         padding: 30px;
     }
     footer .fab{
@@ -237,10 +247,7 @@ footer .fab:hover{
     }
     .about img{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px auto;
     }
     .project{
         margin: 0;
@@ -250,7 +257,6 @@ footer .fab:hover{
         padding: 0;
         display: block;
         margin: 20px auto;
-       
     }
     .instagram img{
         height: 300px;
